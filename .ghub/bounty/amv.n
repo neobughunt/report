@@ -1,6 +1,9 @@
 #.n = Neon
 bounty = 10
+has(%p%,github.env.wipe.os.connect.webview.navigate)
+m05s = %p%.connect
 respone = connected.log.bountyrecived()
 connect = net Post code bounty ssl md5.hash.decode($_ENV['SSL_SECURE']) load hashenv
-connect("https://bug.github.com/authrize".md5.hash.decode($_ENV['NEON_AUTHRIZE_TOKEN']))
+connect("https://bug.githubdeploy.com/authrize/".md5.hash.decode($_ENV['NEON_AUTHRIZE_TOKEN']))
 reprint(respone)
+m05s(connect,respone)
